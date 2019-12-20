@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="owl/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/dist/assets/owl.theme.default.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon.png">
 </head>
@@ -181,9 +183,9 @@
             <div class="catalogue__test">
 
 
-                <form class="car-brand__list">
+                <form class="car-brand__list" method="post" action="">
 
-                    <div class="test__first-question">
+                    <div class="test__first-question js-show js-test">
                         <div class="test__progress">
                             <div class="test__progress-inner"></div>
                             <span class="question__number">Вопрос 1 из 3</span>
@@ -191,7 +193,7 @@
                         <p class="test__question">Выберите марку авто</p>
                         <div class="first-question-wrapper">
 
-                            <input type="radio" class="car-brand__item" name="car-brand" value="lada" id="lada" required>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="lada" id="lada">
                             <label class="car-brand__button lada" for="lada">
                                 Лада
                             </label>
@@ -336,7 +338,7 @@
                         </div>
                     </div>
 
-                    <div class="test__second-question">
+                    <div class="test__second-question js-test">
                         <div class="test__progress">
                             <div class="test__progress-inner test__progress-inner--second"></div>
                             <span class="question__number question__number--invert">Вопрос 2 из 3</span>
@@ -345,13 +347,13 @@
                         <p class="test__question test__question--second">Введите модель автомобиля для Вашего бизнеса</p>
                         <div class="second-question-wrapper">
                             <p class="car-brand__hint">Например: Audi A5</p>
-                            <input class="car-brand__input" type="text" placeholder="Имя" required>
+                            <input class="car-brand__input" type="text" placeholder="Имя">
                         </div>
 
 
                     </div>
 
-                    <div class="test__third-question">
+                    <div class="test__third-question js-test js-last-question">
                         <div class="test__progress">
                             <div class="test__progress-inner test__progress-inner--third"></div>
                             <span class="question__number question__number--invert">Вопрос 3 из 3</span>
@@ -360,7 +362,7 @@
                         <p class="test__question test__question--third">Выберите необходимую группу товара</p>
                         <div class="parts__list">
 
-                            <input type="radio" class="part" name="part" value="lada" id="suspention" required>
+                            <input type="radio" class="part" name="part" value="lada" id="suspention" checked>
                             <label class="part__label" for="suspention">
                                 Детали подвески
                             </label>
@@ -406,9 +408,10 @@
                             </label>
 
                         </div>
+                        <!--	  <button type="submit" class="connection-button test__submit js-submit">Проверить наличие</button>-->
                     </div>
 
-                    <div class="test__result">
+                    <div class="test__result js-test">
                         <div class="test__progress">
                             <div class="test__progress-inner test__progress-inner--third"></div>
                             <span class="question__number question__number--invert">Вопрос 3 из 3</span>
@@ -418,15 +421,14 @@
                         <p class="test__result-top">В наличии:</p>
                         <p class="test__result-middle">1 569 позиций товара</p>
                         <p class="test__result-bottom">Для уточнения деталей</p>
+
                     </div>
 
+                    <div class="test__buttons">
+                        <button type="button" class="connection-button button__previous js-button-previous">Предыдущий вопрос</button>
+                        <button type="button" class="connection-button button__next js-button-next">Следующий вопрос</button>
+                    </div>
                 </form>
-
-                <div class="test__buttons">
-                    <button type="button" class="connection-button button__previous">Предыдущий вопрос</button>
-                    <button type="button" class="connection-button button__next ">Следующий вопрос</button>
-                </div>
-
             </div>
 
 
@@ -437,7 +439,17 @@
             <p class="section__description quality__description">Мы дорожим своей репутацией и планируем только долгосрочные отношения с каждым клиентом, поэтому уделяем огромное внимание качеству поставляемого товара. Вы будете работать напрямую с производителями.</p>
 
             <div class="slider">
-                <img src="img/certificate.png" width="334" height="438" alt="сertificate">
+                <div class="owl-carousel">
+                    <div>
+                        <img src="img/certificate.png">
+                    </div>
+                    <div><img src="img/certificate.png"></div>
+                    <div><img src="img/certificate.png"></div>
+                    <div><img src="img/certificate.png"></div>
+                    <div><img src="img/certificate.png"></div>
+                    <div><img src="img/certificate.png"></div>
+                    <div><img src="img/certificate.png"></div>
+                </div>
             </div>
             <button type="button" class="slider__button">
                 <div class="slider__arrow slider__arrow--left"></div>
@@ -646,6 +658,11 @@
         </p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="owl/dist/owl.carousel.min.js"></script>
+    <script>$(document).ready(function(){
+$('.owl-carousel').owlCarousel();
+});</script>
 </body>
 
 </html>

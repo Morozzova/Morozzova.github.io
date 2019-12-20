@@ -27,3 +27,43 @@
 
             }
         });
+
+        var testFrames = document.querySelectorAll('.js-test');
+        var previousButton = document.querySelector('.js-button-previous');
+        var nextButton = document.querySelector('.js-button-next');
+
+
+        nextButton.addEventListener('click',
+            function(evt) {
+                evt.preventDefault();
+
+                for (var i = 0; i < testFrames.length - 1; i++) {
+                    if (testFrames[i].classList.contains('js-show')) {
+                        testFrames[i].classList.remove('js-show');
+                        i++;
+                        testFrames[i].classList.add('js-show');
+                    }
+                }
+            });
+
+        previousButton.addEventListener('click',
+            function(evt) {
+                evt.preventDefault();
+
+                for (var i = 1; i < testFrames.length; i++) {
+
+                    if (testFrames[i].classList.contains('js-show')) {
+                        testFrames[i].classList.remove('js-show');
+                        i--;
+                        testFrames[i].classList.add('js-show');
+                    }
+                }
+            });
+
+        /*        var submit = document.querySelector('.js-submit');
+
+        submit.addEventListener('click',
+            function(evt) {
+                evt.preventDefault();
+
+        });*/

@@ -40,6 +40,11 @@
     .procedure__step {
         width: 100%
     }
+    .quality__title,
+    .quality__description {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
 @media screen and (max-width: 1180px) {
     .ten-millions {
@@ -264,6 +269,16 @@
         margin-right: 20px;
         margin-left: 20px;
     }
+    .catalogue {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .button__next {
+        margin-right: 18px;
+    }
+    .button__previous {
+        margin-left: 18px;
+    }
 }
 @media screen and (max-width: 800px) {
     .numbers__item {
@@ -282,6 +297,38 @@
         margin-right: 20px;
         font-size: 12px;
         line-height: 17px
+    }
+    .test__progress {
+        width: 500px;
+    }
+    .first-question-wrapper {
+        width: 351px;
+        margin-bottom: 34px;
+    }
+    .car-brand__button:nth-child(8n) {
+        margin-right: 0;
+    }
+    .car-brand__button:nth-child(n + 34) {
+        margin-bottom: 5px;
+    }
+    .car-brand__button:nth-child(n + 40) {
+        margin-bottom: 0;
+    }
+    .test__question {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .test__buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 12px;
+    }
+    .button__next {
+        margin-right: 0;
+    }
+    .parts__list {
+        height: auto;
     }
 }
 @media screen and (max-width: 600px) {
@@ -381,6 +428,10 @@
         line-height: 21px;
         text-align: left
     }
+    .procedure__section-wrapper {
+        padding-bottom: 81px;
+        ;
+    }
     .procedure__title {
         margin-bottom: 22px
     }
@@ -405,11 +456,87 @@
     }
     .price-buttons {
         padding-bottom: 35px;
-	    margin-top: 0;
+        margin-top: 0;
     }
     .price-list {
         width: 175px;
         margin-right: 8px;
+    }
+    .catalogue {
+        margin-bottom: 77px;
+    }
+    .catalogue__title,
+    .catalogue__description {
+        text-align: center;
+    }
+    .catalogue__test {
+        padding-top: 34px;
+    }
+    .test__progress {
+        width: auto;
+        height: 20px;
+        padding: 0;
+        margin-bottom: 44px;
+        margin-right: 20px;
+        margin-left: 20px;
+        box-sizing: border-box;
+    }
+    .test__progress-inner {
+        height: 20px;
+    }
+    .question__number {
+        top: -5px;
+        font-size: 8px;
+        line-height: 8px;
+    }
+    .test__question {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+    .first-question-wrapper {
+        width: 247px;
+    }
+    .car-brand__button {
+        width: 58px;
+        height: 58px;
+        background-size: 50%;
+    }
+    .second-question-wrapper {
+        width: 217px;
+        margin-bottom: 50px;
+    }
+    .car-brand__input {
+        height: 54px;
+    }
+    .catalogue__description {
+        margin-bottom: 35px;
+    }
+    .parts__list {
+        margin-bottom: 50px;
+    }
+    .part__label {
+        font-size: 14px;
+        width: auto;
+    }
+    .test__result-top,
+    .test__result-bottom {
+        font-size: 14px;
+    }
+    .test__result-middle {
+        margin-bottom: 100px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .quality__title {
+        margin-bottom: 22px;
+        text-align: center;
+    }
+    .quality__description {
+        margin-bottom: 22px;
+        text-align: center;
     }
 }
 @media screen and (max-width: 350px) {
