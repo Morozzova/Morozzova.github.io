@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon.png">
 </head>
@@ -17,34 +18,41 @@
 
         <section class="logo-torsion">
             <a href="index.html">
-                <img class="logo-torsion__image" src="logo-torsion.svg" width="90" height="108" alt="Логотип Торсион">
+                <img class="logo-torsion__image" src="img/logo-torsion.svg" width="90" height="108" alt="Логотип Торсион">
             </a>
         </section>
 
-        <section class="navigation">
-            <button type="button" class="toggle-menu">|||</button>
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="#catalogue">Продукты</a>
-                </li>
-                <li class="navigation__item"><a class="navigation__link" href="#quality">Гарантии</a>
-                </li>
-                <li class="navigation__item"><a class="navigation__link" href="#distributor">Доставка</a>
-                </li>
-                <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a>
-                </li>
-            </ul>
+        <button type="button" class="toggle-menu js-toggle-menu">|||</button>
 
-        </section>
+        <div class="navigation-mobile js-navigation-mobile">
+            <section class="navigation">
 
-        <section class="location">
-            <a class="location__link" href="">Санкт-Петербург</a>
-        </section>
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="#catalogue">Продукты</a>
+                    </li>
+                    <li class="navigation__item"><a class="navigation__link" href="#quality">Гарантии</a>
+                    </li>
+                    <li class="navigation__item"><a class="navigation__link" href="#distributor">Доставка</a>
+                    </li>
+                    <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
 
-        <section class="connection">
-            <button type="button" class="toggle-phone"></button>
-            <p class="phone">+7 777 777 77 77</p>
-            <button type="button" class="connection-button connection-button--header">Связаться с менеджером</button>
-        </section>
+            </section>
+
+            <section class="location">
+                <a class="location__link" href="">Санкт-Петербург</a>
+            </section>
+
+            <section class="connection">
+                <p class="phone">+7 777 777 77 77</p>
+                <button type="button" class="connection-button js-connection-button connection-button--header">Связаться с менеджером</button>
+            </section>
+        </div>
+
+        <a href="tel:+77777777777" class="call">
+            <img src="img/phone-icon.svg" width="17" height="17" alt="Позвонить">
+        </a>
 
     </header>
 
@@ -57,8 +65,7 @@
                     <p class="description">В наличии <span class="description__selection">более 1 500 наименований</span> для самых популярных автомобилей России и СНГ</p>
                     <p class="buttons callback-buttons">
                         <button type="button" class="connection-button button__main-banner">Связаться с менеджером</button>
-                        <a href="79215755881" class="whatsapp-button">
-                            <img src="img/whatsapp-icon.svg" width="26" height="26" alt="WhatsApp">
+                        <a href="https://wa.me/79099017227?text=Здравствуйте!%20Я%20заинтересован%20в%20покупке%20запчастей%20для%20автомобиля." class="whatsapp-button">
                         </a>
                     </p>
                 </div>
@@ -75,7 +82,7 @@
             <ul class="numbers__list">
                 <li class="numbers__item">
                     <p class="numbers__paragraph-top">более</p>
-                    <p class="numbers__paragraph-middle">10 млн.</p>
+                    <p class="numbers__paragraph-middle ten-millions">10&nbsp;млн.</p>
                     <p class="numbers__paragraph-bottom">автозапчастей</p>
                 </li>
                 <li class="numbers__item">
@@ -86,7 +93,7 @@
                 <li class="numbers__item">
                     <p class="numbers__paragraph-top">более</p>
                     <p class="numbers__paragraph-middle">45</p>
-                    <p class="numbers__paragraph-bottom">сотрудников в штате</p>
+                    <p class="numbers__paragraph-bottom">сотрудников в&nbsp;штате</p>
                 </li>
                 <li class="numbers__item">
                     <p class="numbers__paragraph-top">более</p>
@@ -107,217 +114,307 @@
             <h2 class="title advantages__title">Почему выбирают <span class="title-select">Торсион</span></h2>
 
             <ul class="advantages__list">
-                <li class="advantages__item advantages__guarantee">Гарантия на все товары 1 год</li>
-                <li class="advantages__item advantages__assortment">Более 1 500 товарных позиций в наличии</li>
-                <li class="advantages__item advantages__earn">Заработаете на 20% больше</li>
-                <li class="advantages__item advantages__support">Менеджеры действительно ВСЕГДА на связи</li>
-                <li class="advantages__item advantages__minimum">Минимальная сумма заказа 30 000 ₽</li>
-                <li class="advantages__item advantages__manufacturer">Вы работаете напрямую с производителем</li>
+                <li class="advantages__item advantages__guarantee">Гарантия на все
+                    <br>товары 1 год</li>
+                <li class="advantages__item advantages__assortment">Более 1 500 товарных
+                    <br>позиций в наличии</li>
+                <li class="advantages__item advantages__earn">Заработаете
+                    <br>на 20% больше</li>
+                <li class="advantages__item advantages__support">Менеджеры действительно
+                    <br>ВСЕГДА на связи</li>
+                <li class="advantages__item advantages__minimum">Минимальная сумма
+                    <br>заказа 30 000 ₽</li>
+                <li class="advantages__item advantages__manufacturer">Вы работаете напрямую
+                    <br>с производителем</li>
             </ul>
 
         </section>
+        <div class="procedure__section-wrapper">
+            <section class="procedure">
 
-        <section class="procedure">
+                <h2 class="title procedure__title">Как мы <span class="title-select">работаем</span></h2>
+                <p class="section__description procedure__description">Мы знаем, что нужно владельцам автобизнеса и всегда готовы предложить необходимые детали для качественного обслуживания клиентов.</p>
 
-            <h2 class="title procedure__title">Как мы <span class="title-select">работаем</span></h2>
-            <p class="section__description procedure__description">Мы знаем, что нужно владельцам автобизнеса и всегда готовы предложить необходимые детали для качественного обслуживания клиентов.</p>
 
-            <div class="procedure__main">
-
-                <div class="procedure__video-wrapper">
-                    <div class="video procedure__video">
-                        <p class="video__hint">Смотреть видео</p>
-                        <button class="video__button">
-                            &#9656;</button>
+                <div class="procedure__main">
+                    <div class="procedure__picture-wrapper">
+                        <img class="procedure__picture" src="img/parts-7.jpg" alt="Запчасти">
                     </div>
+
+                    <ol class="procedure__order">
+                        <li class="procedure__step">
+                            <h3 class="step__title">Заявка</h3>
+                            <p class="step__description">Вы оставляете заявку на сайте и свободный менеджер связывается с Вами в ближайшее время</p>
+                        </li>
+                        <li class="procedure__step">
+                            <h3 class="step__title">Заказ</h3>
+                            <p class="step__description">Менеджер подберет необходимые автозапчасти под цели Вашего бизнеса и произведет расчет стоимости</p>
+                        </li>
+                        <li class="procedure__step">
+                            <h3 class="step__title">Оплата</h3>
+                            <p class="step__description">Мы можем предложить различные условия и графики платежей, а Вы оплатить любым удобным Вам способом</p>
+                        </li>
+                        <li class="procedure__step">
+                            <h3 class="step__title">Доставка</h3>
+                            <p class="step__description">Мы собираем Ваш заказ и отправляем в любую точку России и СНГ в течение 24 часов.</p>
+                        </li>
+                    </ol>
                 </div>
 
-                <ol class="procedure__order">
-                    <li class="procedure__step">
-                        <h3 class="step__title">Заявка</h3>
-                        <p class="step__description">Вы оставляете заявку на сайте и свободный менеджер связывается с Вами в ближайшее время</p>
-                    </li>
-                    <li class="procedure__step">
-                        <h3 class="step__title">Заказ</h3>
-                        <p class="step__description">Менеджер подберет необходимые автозапчасти под цели Вашего бизнеса и произведет расчет стоимости</p>
-                    </li>
-                    <li class="procedure__step">
-                        <h3 class="step__title">Оплата</h3>
-                        <p class="step__description">Мы можем предложить различные условия и графики платежей, а Вы оплатить любым удобным Вам способом</p>
-                    </li>
-                    <li class="procedure__step">
-                        <h3 class="step__title">Доставка</h3>
-                        <p class="step__description">Мы собираем Ваш заказ и отправляем в любую точку России и СНГ в течение 24 часов.</p>
-                    </li>
-                </ol>
+                <div class="aquaint">
+                    <p class="aquaint__title">Ознакомьтесь с нашим ассортиментом <span class="aquaint__select">прямо&nbsp;сейчас</span>
+                    </p>
+                    <p class="buttons price-buttons">
+                        <button type="button" class="connection-button price-list">Скачать ПРАЙС-ЛИСТ</button>
+                        <a href="https://wa.me/79099017227?text=Здравствуйте!%20Я%20заинтересован%20в%20покупке%20запчастей%20для%20автомобиля." class="whatsapp-button">
+                        </a>
+                    </p>
 
-            </div>
-            <div class="aquaint">
-                <p class="aquaint__title">Ознакомьтесь с нашим ассортиментом <span class="aquaint__select">прямо сейчас</span>
-                </p>
-                <p class="buttons price-buttons">
-                    <button type="button" class="connection-button price-list">Скачать ПРАЙС-ЛИСТ</button>
-                    <button type="button" class="whatsapp-button">
-                        <img src="img/whatsapp-icon.svg" width="26" height="26" alt="WhatsApp">
-                    </button>
-                </p>
+                </div>
 
-            </div>
-        </section>
-
+            </section>
+        </div>
         <section class="catalogue" id="catalogue">
             <h2 class="title catalogue__title">Каталог <span class="title-select">продукции</span></h2>
             <p class="section__description catalogue__description">В наличии <span class="section__selection">более 1 500 наименований</span> компонентов для самых популярных автомобилей и авто отечественного производства</p>
 
             <div class="catalogue__test">
-                <span class="test__progress"></span>
-                <p class="test__question">Выберите марку авто</p>
+
 
                 <form class="car-brand__list">
 
+                    <div class="test__first-question">
+                        <div class="test__progress">
+                            <div class="test__progress-inner"></div>
+                            <span class="question__number">Вопрос 1 из 3</span>
+                        </div>
+                        <p class="test__question">Выберите марку авто</p>
+                        <div class="first-question-wrapper">
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="lada" id="lada">
-                    <label class="car-brand__button lada" for="lada">
-                        Лада
-                    </label>
-
-
-                    <input type="radio" class="car-brand__item" name="car-brand" value="gaz" id="gaz">
-                    <label class="car-brand__button gaz" for="gaz">
-                        ГАЗ
-                    </label>
-
-
-                    <input type="radio" class="car-brand__item" name="car-brand" value="ford" id="ford">
-                    <label class="car-brand__button ford" for="ford">
-                        Ford
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="lada" id="lada" required>
+                            <label class="car-brand__button lada" for="lada">
+                                Лада
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="mitsubishi" id="mitsubishi">
-                    <label class="car-brand__button mitsubishi" for="mitsubishi">
-                        Mitsubishi
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="gaz" id="gaz">
+                            <label class="car-brand__button gaz" for="gaz">
+                                ГАЗ
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="opel" id="opel">
-                    <label class="car-brand__button opel" for="opel">
-                        Opel
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="ford" id="ford">
+                            <label class="car-brand__button ford" for="ford">
+                                Ford
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="nissan" id="nissan">
-                    <label class="car-brand__button nissan" for="nissan">
-                        Nissan
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="mitsubishi" id="mitsubishi">
+                            <label class="car-brand__button mitsubishi" for="mitsubishi">
+                                Mitsubishi
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="wolksvagen" id="wolksvagen">
-                    <label class="car-brand__button wolksvagen" for="wolksvagen">
-                        Wolksvagen
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="opel" id="opel">
+                            <label class="car-brand__button opel" for="opel">
+                                Opel
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="land-rover" id="land-rover">
-                    <label class="car-brand__button land-rover" for="land-rover">
-                        Land Rover
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="nissan" id="nissan">
+                            <label class="car-brand__button nissan" for="nissan">
+                                Nissan
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="kia" id="kia">
-                    <label class="car-brand__button kia" for="kia">
-                        Kia
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="wolksvagen" id="wolksvagen">
+                            <label class="car-brand__button wolksvagen" for="wolksvagen">
+                                Wolksvagen
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="chevrolet" id="chevrolet">
-                    <label class="car-brand__button chevrolet" for="chevrolet">
-                        Chevrolet
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="land-rover" id="land-rover">
+                            <label class="car-brand__button land-rover" for="land-rover">
+                                Land Rover
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="renault" id="renault">
-                    <label class="car-brand__button renault" for="renault">
-                        Renault
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="kia" id="kia">
+                            <label class="car-brand__button kia" for="kia">
+                                Kia
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="daewoo" id="daewoo">
-                    <label class="car-brand__button daewoo" for="daewoo">
-                        Daewoo
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="chevrolet" id="chevrolet">
+                            <label class="car-brand__button chevrolet" for="chevrolet">
+                                Chevrolet
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="peugeot" id="peugeot">
-                    <label class="car-brand__button peugeot" for="peugeot">
-                        Peugeot
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="renault" id="renault">
+                            <label class="car-brand__button renault" for="renault">
+                                Renault
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="fiat" id="fiat">
-                    <label class="car-brand__button fiat" for="fiat">
-                        Fiat
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="daewoo" id="daewoo">
+                            <label class="car-brand__button daewoo" for="daewoo">
+                                Daewoo
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="citroen" id="citroen">
-                    <label class="car-brand__button citroen" for="citroen">
-                        Citroen
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="peugeot" id="peugeot">
+                            <label class="car-brand__button peugeot" for="peugeot">
+                                Peugeot
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="suzuki" id="suzuki">
-                    <label class="car-brand__button suzuki" for="suzuki">
-                        Suzuki
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="fiat" id="fiat">
+                            <label class="car-brand__button fiat" for="fiat">
+                                Fiat
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="hyundai" id="hyundai">
-                    <label class="car-brand__button hyundai" for="hyundai">
-                        Hyundai
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="citroen" id="citroen">
+                            <label class="car-brand__button citroen" for="citroen">
+                                Citroen
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="mazda" id="mazda">
-                    <label class="car-brand__button mazda" for="mazda">
-                        Mazda
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="suzuki" id="suzuki">
+                            <label class="car-brand__button suzuki" for="suzuki">
+                                Suzuki
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="uaz" id="uaz">
-                    <label class="car-brand__button uaz" for="uaz">
-                        УАЗ
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="hyundai" id="hyundai">
+                            <label class="car-brand__button hyundai" for="hyundai">
+                                Hyundai
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="toyota" id="toyota">
-                    <label class="car-brand__button toyota" for="toyota">
-                        Toyota
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="mazda" id="mazda">
+                            <label class="car-brand__button mazda" for="mazda">
+                                Mazda
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="skoda" id="skoda">
-                    <label class="car-brand__button skoda" for="skoda">
-                        Skoda
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="uaz" id="uaz">
+                            <label class="car-brand__button uaz" for="uaz">
+                                УАЗ
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="bmw" id="bmw">
-                    <label class="car-brand__button bmw" for="bmw">
-                        BMW
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="toyota" id="toyota">
+                            <label class="car-brand__button toyota" for="toyota">
+                                Toyota
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="mercedes" id="mercedes">
-                    <label class="car-brand__button mercedes" for="mercedes">
-                        Mercedes
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="skoda" id="skoda">
+                            <label class="car-brand__button skoda" for="skoda">
+                                Skoda
+                            </label>
 
 
-                    <input type="radio" class="car-brand__item" name="car-brand" value="audi" id="audi">
-                    <label class="car-brand__button audi" for="audi">
-                        Audi
-                    </label>
+                            <input type="radio" class="car-brand__item" name="car-brand" value="bmw" id="bmw">
+                            <label class="car-brand__button bmw" for="bmw">
+                                BMW
+                            </label>
+
+
+                            <input type="radio" class="car-brand__item" name="car-brand" value="mercedes" id="mercedes">
+                            <label class="car-brand__button mercedes" for="mercedes">
+                                Mercedes
+                            </label>
+
+
+                            <input type="radio" class="car-brand__item" name="car-brand" value="audi" id="audi">
+                            <label class="car-brand__button audi" for="audi">
+                                Audi
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="test__second-question">
+                        <div class="test__progress">
+                            <div class="test__progress-inner test__progress-inner--second"></div>
+                            <span class="question__number question__number--invert">Вопрос 2 из 3</span>
+                        </div>
+
+                        <p class="test__question test__question--second">Введите модель автомобиля для Вашего бизнеса</p>
+                        <div class="second-question-wrapper">
+                            <p class="car-brand__hint">Например: Audi A5</p>
+                            <input class="car-brand__input" type="text" placeholder="Имя" required>
+                        </div>
+
+
+                    </div>
+
+                    <div class="test__third-question">
+                        <div class="test__progress">
+                            <div class="test__progress-inner test__progress-inner--third"></div>
+                            <span class="question__number question__number--invert">Вопрос 3 из 3</span>
+                        </div>
+
+                        <p class="test__question test__question--third">Выберите необходимую группу товара</p>
+                        <div class="parts__list">
+                           
+                            <input type="radio" class="part" name="part" value="lada" id="suspention" required>
+                            <label class="part__label" for="suspention">
+                                Детали подвески
+                            </label>
+                            
+                            <input type="radio" class="part" name="part" value="lada" id="hub-knot" required>
+                            <label class="part__label" for="hub-knot">
+                                Компоненты ступичного узла
+                            </label>
+                            
+                            <input type="radio" class="part" name="part" value="lada" id="transmission" required>
+                            <label class="part__label" for="transmission">
+                                Детали трансмиссии
+                            </label>
+                            
+                            <input type="radio" class="part" name="part" value="lada" id="filters" required>
+                            <label class="part__label" for="filters">
+                                Фильтры
+                            </label>
+                            
+                            <input type="radio" class="part" name="part" value="lada" id="brakes" required>
+                            <label class="part__label" for="brakes">
+                                Тормозные диски и колодки
+                            </label>
+                            
+                            <input type="radio" class="part" name="part" value="lada" id="engine" required>
+                            <label class="part__label" for="engine">
+                                Детали двигателя
+                            </label>
+                            
+                            <input type="radio" class="part" name="part" value="lada" id="rudder" required>
+                            <label class="part__label" for="rudder">
+                                Детали рулевого управления
+                            </label>
+                            
+                            <input type="radio" class="part" name="part" value="lada" id="bearings" required>
+                            <label class="part__label" for="bearings">
+                                Подшипники
+                            </label>
+                            
+                            <input type="radio" class="part" name="part" value="lada" id="repair-kits" required>
+                            <label class="part__label" for="repair-kits">
+                                Ремонтные комплекты
+                            </label>
+                            
+                        </div>
+                    </div>
+
+                    <div class="test__result">
+                        <div class="test__progress">
+                            <div class="test__progress-inner test__progress-inner--third"></div>
+                            <span class="question__number question__number--invert">Вопрос 3 из 3</span>
+                        </div>
+                        <p class="test__question">Проверка наличия на складе</p>
+                    </div>
 
                 </form>
 
@@ -328,6 +425,7 @@
 
             </div>
 
+
         </section>
 
         <section class="quality" id="quality">
@@ -335,8 +433,14 @@
             <p class="section__description quality__description">Мы дорожим своей репутацией и планируем только долгосрочные отношения с каждым клиентом, поэтому уделяем огромное внимание качеству поставляемого товара. Вы будете работать напрямую с производителями.</p>
 
             <div class="slider">
-                <img width="334" height="438" alt="сertificate">
+                <img src="img/certificate.png" width="334" height="438" alt="сertificate">
             </div>
+            <button type="button" class="slider__button">
+                <div class="slider__arrow slider__arrow--left"></div>
+            </button>
+            <button type="button" class="slider__button">
+                <div class="slider__arrow slider__arrow--right"></div>
+            </button>
         </section>
 
         <section class="profit">
@@ -357,9 +461,8 @@
 
                     <div class="buttons callback-buttons">
                         <input class="callback__submit connection-button" type="submit" value="Связаться с менеджером">
-                        <button type="button" class="whatsapp-button">
-                            <img src="img/whatsapp-icon.svg" width="26" height="26" alt="WhatsApp">
-                        </button>
+                        <a href="https://wa.me/79099017227?text=Здравствуйте!%20Я%20заинтересован%20в%20покупке%20запчастей%20для%20автомобиля." class="whatsapp-button">
+                        </a>
                     </div>
 
                     <p class="privacy">Нажимая на кнопку вы соглашаетесь с условиями политики конфиденциальности</p>
@@ -381,9 +484,8 @@
 
             <p class="buttons callback-buttons">
                 <button type="button" class="connection-button commercial-button">Получить коммерческое предложение</button>
-                <button type="button" class="whatsapp-button">
-                    <img src="img/whatsapp-icon.svg" width="26" height="26" alt="WhatsApp">
-                </button>
+                <a href="https://wa.me/79099017227?text=Здравствуйте!%20Я%20хотел%20бы%20получить%20коммерческое%20предложение." class="whatsapp-button">
+                </a>
             </p>
         </section>
 
@@ -396,9 +498,8 @@
 
                     <div class="callback-buttons wholesale__callback-buttons">
                         <input class="callback__submit connection-button" type="submit" value="Связаться с менеджером">
-                        <button type="button" class="whatsapp-button">
-                            <img src="img/whatsapp-icon.svg" width="26" height="26" alt="WhatsApp">
-                        </button>
+                        <a href="https://wa.me/79099017227?text=Здравствуйте!%20Меня%20интересует%20рассрочка%20на%20оптовую%20закупку." class="whatsapp-button">
+                        </a>
                     </div>
                 </div>
                 <p class="privacy privacy__wholesale">Нажимая на кнопку вы соглашаетесь с условиями политики конфиденциальности</p>
@@ -477,9 +578,10 @@
                 <p class="section__description contacts__description">в любом удобном мессенджере прямо сейчас</p>
 
                 <p class="messengers">
-                    <button type="button" class="whatsapp-button">
-                        <img src="img/whatsapp-icon.svg" width="26" height="26" alt="WhatsApp">
-                    </button>
+                    <a href="https://wa.me/79099017227?text=Здравствуйте!%20Я%20заинтересован%20в%20покупке%20запчастей%20для%20автомобиля." class="whatsapp-button">
+                    </a>
+                    <a class="vk-button">
+                    </a>
                 </p>
 
                 <p class="address__card">г. Санкт-Петербург, ул. Lorem Ipsum, д. 11, оф. 109
@@ -501,25 +603,28 @@
         <section class="first">
             <h2 class="title first__title"><span class="title-select">Узнай первым</span> о наших скидках и акциях</h2>
             <p class="section__description first__description">Будь в курсе последних новостей и приближающихся акциях компании Торсион</p>
-            <button type="button" class="whatsapp-button">
-                <img src="img/whatsapp-icon.svg" width="26" height="26" alt="WhatsApp">
-            </button>
+
+            <a class="vk-button-big">
+				ВКонтакте
+			</a>
+
+
+
         </section>
 
-        <section class="modal" id="js-modal">
-            <form class="callback modal__callback">
+        <section class="modal">
+            <form class="callback modal__callback js-modal">
                 <h3 class="form__title">Заполните форму</h3>
                 <p class="form__description">и менеджер свяжется с Вами в ближайшее время</p>
                 <input class="callback__input" type="text" placeholder="Имя" required>
                 <input class="callback__input" type="tel" placeholder="Номер телефона" required>
 
-                <div class="callback-buttons">
+                <div class="buttons buttons__modal">
                     <input class="callback__submit connection-button" type="submit" value="Связаться с менеджером">
-                    <button type="button" class="whatsapp-button">
-                        <img src="img/whatsapp-icon.svg" width="26" height="26" alt="WhatsApp">
-                    </button>
+                    <a href="https://wa.me/79099017227?text=Здравствуйте!%20Я%20заинтересован%20в%20покупке%20запчастей%20для%20автомобиля." class="whatsapp-button">
+                    </a>
                 </div>
-                <button type="button" class="close-button">&#215;</button>
+                <button type="button" class="close-button js-close-form"></button>
                 <p class="privacy">Нажимая на кнопку вы соглашаетесь с условиями политики конфиденциальности</p>
 
             </form>
@@ -532,11 +637,11 @@
         <p class="way-agency">Задизайнено
             <br>и разработано
             <a href="http://wayagency.ru/" target="_blank">
-                <img class="way-agency-logo" src="logo-way-agency.png" width="130" height="34" alt="Логотип Way Agency">
+                <img class="way-agency-logo" src="img/logo-way-agency.png" width="130" height="34" alt="Логотип Way Agency">
             </a>
         </p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
