@@ -7,14 +7,24 @@
             menuButton.classList.toggle('js-menu-close');
         });
 
-        var connectionButton = document.querySelector('.js-connection-button');
+        var connectionButton = document.querySelectorAll('.js-connection-button');
         var modal = document.querySelector('.js-modal');
         var closeButton = document.querySelector('.js-close-form');
+        var button;
 
-        connectionButton.addEventListener('click', function(evt) {
-            evt.preventDefault();
+        for (var i = 0; i < connectionButton.length; i++) {
+            button = connectionButton[i];
+            button.addEventListener('click', clickHandler);
+        }
+
+        function clickHandler(event) {
+            event.preventDefault();
             modal.classList.add('js-show');
-        });
+        }
+
+        function doubleClickHandler(event) {
+            this.removeEventListener('click', clickHandler);
+        }
 
         closeButton.addEventListener('click', function(evt) {
             evt.preventDefault();
@@ -67,5 +77,3 @@
                 evt.preventDefault();
 
         });*/
-
-

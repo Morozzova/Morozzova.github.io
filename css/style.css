@@ -1210,7 +1210,7 @@ body {
 }
 .modal__callback {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 176px;
     left: 0;
     right: 0;

@@ -275,7 +275,7 @@
         position: absolute;
         top: 6px;
         left: 23px;
-        background-image: url('img/phone-white.png');
+        background-image: url('../img/phone-white.png');
         width: 13px;
         height: 13px;
         color: #fff
@@ -564,7 +564,7 @@
         box-shadow: 0px 4px 15px rgba(57, 193, 17, 0.6), 0px 1px 0px #296500, inset 0px 0px 11px rgba(255, 255, 255, 0.4);
     }
     .whatsapp-button:active {
-        background: url('img/whatsapp-icon.svg'), linear-gradient(180deg, #57ed2e 0, #59ac16 100%);
+        background: url('../img/whatsapp-icon.svg'), linear-gradient(180deg, #57ed2e 0, #59ac16 100%);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 16px 16px, auto;
