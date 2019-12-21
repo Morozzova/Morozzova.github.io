@@ -713,13 +713,13 @@ body {
     box-shadow: inset 0 0 0 4px #ffffff;
 }
 .test__third-question {
-	position: relative;
+    position: relative;
 }
 .test__submit {
-	position: absolute;
-	bottom: -161px;
-	right: 228px;
-	margin-right: 0;
+    position: absolute;
+    bottom: -161px;
+    right: 228px;
+    margin-right: 0;
 }
 .test__result {
     text-align: center;
@@ -749,7 +749,7 @@ body {
     color: #000000;
     opacity: 0.4;
     background: transparent;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 .button__previous:hover,
 .button__previous:focus {
@@ -810,6 +810,7 @@ body {
     background-image: url(img/bg-hotite.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .profit-wrapper {
     display: flex;
@@ -895,6 +896,10 @@ body {
 .callback__input:focus {
     color: #000000;
 }
+.profit__buttons {
+    justify-content: center;
+    margin-bottom: 44px;
+}
 .privacy {
     width: 322px;
     margin: 0 auto;
@@ -909,7 +914,7 @@ body {
 .cooperation__list {
     display: flex;
     justify-content: space-between;
-    max-width: 1280px;
+    max-width: 1400px;
     padding: 0;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -945,6 +950,9 @@ body {
 .cooperation__factories::before {
     background-image: url('img/sotr-4.jpg');
 }
+.cooperation__buttons {
+    justify-content: center;
+}
 .commercial-button {
     width: 449px;
 }
@@ -955,6 +963,7 @@ body {
     background: linear-gradient(104.14deg, #e8e8e8 -4.52%, #ffffff 14.89%, #ffffff 73.15%, #d7d7d7 110.36%);
     box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
+    margin-bottom: 247px;
 }
 .wholesale__title {
     padding-top: 64px;
@@ -974,45 +983,35 @@ body {
 }
 .wholesale__callback-buttons {
     margin-bottom: 0;
+    justify-content: center;
+    display: flex;
 }
 .privacy__wholesale {
     width: auto;
     text-align: center;
 }
 .distributor {
-    background-color: transparent;
-    background-image: url('img/vid-2.jpg');
-    background-size: cover;
-    margin-bottom: 146px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 131px;
 }
 .distributor__title {
     text-align: left;
-    margin-top: 247px;
+    margin-top: 0;
 }
 .distributor-wrapper {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-}
-.distributor__inner {
-    max-width: 1036px;
-    margin-bottom: 131px;
-}
-.distributor__left-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1036px;
+}
+.distributor__description-wrapper {
+    margin-right: 150px;
 }
 .distributor__description {
-    max-width: 660px;
-    margin-left: 0;
     text-align: left;
     margin-bottom: 1em;
 }
-.distributor__video {
-    padding-bottom: 80px;
-    box-sizing: content-box;
+.distributor__picture-wrapper {
+    margin: auto;
 }
 .partners {
     margin-bottom: 88px;
@@ -1035,8 +1034,12 @@ body {
     display: flex;
     align-items: center;
 }
+.partners__logo-wrapper {
+    width: 246px;
+    text-align: center;
+}
 .partners__name {
-    flex-grow: 1;
+    margin-left: 16px;
     font-size: 18px;
     line-height: 27px;
 }
@@ -1045,11 +1048,20 @@ body {
     margin-bottom: 22px;
     text-align: left;
 }
-.contacts__description {
-    text-align: left;
-}
 .contacts {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1920px;
+    margin: 0 auto;
     margin-bottom: 136px;
+}
+.contacts-wrapper {
+    width: 522px;
+    margin-right: 70px;
+}
+.contacts__description {
+    margin-bottom: 37px;
+    text-align: left;
 }
 .messengers {
     display: flex;
@@ -1102,10 +1114,12 @@ body {
     font-size: 24px;
     line-height: 36px;
 }
+.contacts__number {
+    margin-right: 22px;
+}
 .connection-button--contacts {
     width: 253px;
     height: 61px;
-    margin-left: 22px;
     margin-right: 0;
     font-size: 12px;
     line-height: 15px;
@@ -1175,7 +1189,7 @@ body {
     margin: 0 auto;
     background: #ffffff;
     border-radius: 40px;
-    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
 }
 .js-show {
     display: block;

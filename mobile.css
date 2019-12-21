@@ -1,3 +1,18 @@
+@media screen and (max-width: 1900px) {
+    .contacts {
+        display: block;
+    }
+    .contacts-wrapper {
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+    .map-wrapper {
+        text-align: center;
+    }
+    .map {
+        border-radius: 40px;
+    }
+}
 @media screen and (max-width: 1460px) {
     .header {
         margin-right: 20px;
@@ -45,6 +60,88 @@
         margin-right: 20px;
         margin-left: 20px;
     }
+    .profit-wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .profit__callback {
+        margin-left: 20px;
+    }
+    .profit__callback::after,
+    .profit__callback::before {
+        display: none;
+    }
+    .cooperation {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cooperation__list {
+        flex-wrap: wrap;
+    }
+    .cooperation__item {
+        width: 50%;
+        flex-shrink: 0;
+        margin-bottom: 70px;
+    }
+    .wholesale {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .distributor {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .partners {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .contacts {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .first {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1380px) {
+    .wholesale {
+        width: 500px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .wholesale__title {
+        margin: 0 20px;
+        padding-top: 60px;
+        padding-bottom: 0;
+        margin-bottom: 44px;
+        font-size: 30px;
+        line-height: 48px;
+    }
+    .wholesale__callback-wrapper {
+        display: block;
+        text-align: center;
+    }
+    .wholesale__input {
+        width: 446px;
+        margin-bottom: 18px;
+        margin-right: 0;
+    }
+    .wholesale__input:last-child {
+        margin-bottom: 44px;
+    }
+    .privacy__wholesale {
+        width: 322px;
+        padding-bottom: 60px;
+    }
+    .distributor__description-wrapper {
+        margin-right: 50px;
+    }
 }
 @media screen and (max-width: 1180px) {
     .ten-millions {
@@ -53,6 +150,22 @@
     .numbers__paragraph-bottom {
         margin-right: 15px;
         margin-left: 15px
+    }
+    .profit__input {
+        width: 400px;
+    }
+    .profit__submit {
+        width: 296px;
+    }
+    .partners__list {
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .map {
+        width: 100%;
+        max-width: 1069px;
+        height: auto;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -254,7 +367,8 @@
         max-width: 500px
     }
     .procedure__picture {
-        width: 100%
+        width: 100%;
+        height: auto;
     }
     .procedure__order {
         margin-left: 0
@@ -278,6 +392,28 @@
     }
     .button__previous {
         margin-left: 18px;
+    }
+    .profit-wrapper {
+        display: block;
+    }
+    .profit-inner {
+        width: 100%;
+        margin-bottom: 43px;
+    }
+    .profit__callback {
+        width: 540px;
+        margin: 0 auto;
+    }
+    .distributor__left-wrapper {
+        width: 50%;
+    }
+    .distributor__picture-wrapper {
+        width: 50%;
+    }
+    .distributor__picture {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
     }
 }
 @media screen and (max-width: 800px) {
@@ -330,62 +466,98 @@
     .parts__list {
         height: auto;
     }
+    .cooperation__title {
+        margin-bottom: 0;
+    }
+    .cooperation__list {
+        display: block;
+        width: 320px;
+    }
+    .cooperation__item {
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+    .cooperation__trading br {
+        display: none;
+    }
+    .distributor__description-wrapper {
+        margin-right: 0;
+    }
+    .distributor-wrapper {
+        display: block;
+    }
+    .distributor__left-wrapper {
+        width: 100%;
+    }
+    .distributor__picture-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .modal__callback {
+        width: 500px;
+    }
+    .close-button {
+        top: 223px;
+        right: 7px;
+    }
 }
 @media screen and (max-width: 600px) {
     .presentation {
-        padding-bottom: 50px
+        padding-bottom: 50px;
     }
     .main-title {
         font-size: 24px;
         line-height: 32px;
         width: 100%;
         margin-bottom: 22px;
-        margin-top: 40px
+        margin-top: 40px;
     }
     .description {
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: 34px
+        margin-bottom: 34px;
     }
     .buttons {
-        justify-content: center
+        justify-content: center;
     }
     .connection-button {
         width: 217px;
         height: 54px;
         font-size: 11px;
-        line-height: 13px
+        line-height: 13px;
+        box-shadow: 0px 4px 15px rgba(45, 100, 157, 0.7), 0px 1px 0px #154674, inset 0px 0px 4px rgba(255, 255, 255, 0.4);
     }
     .connection-button--header {
         width: 179px;
         height: 39px;
         font-size: 12px;
-        line-height: 14px
+        line-height: 14px;
     }
     .whatsapp-button {
         width: 54px;
         height: 54px;
-        background-size: 16px 16px, auto
+        background-size: 16px 16px, auto;
+        box-shadow: 0px 4px 15px rgba(57, 193, 17, 0.6), 0px 1px 0px #296500, inset 0px 0px 11px rgba(255, 255, 255, 0.4);
     }
     .whatsapp-button:active {
         background: url('img/whatsapp-icon.svg'), linear-gradient(180deg, #57ed2e 0, #59ac16 100%);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 16px 16px, auto
+        background-size: 16px 16px, auto;
     }
     .button__main-banner {
-        margin-right: 8px
+        margin-right: 8px;
     }
     .title {
         font-size: 24px;
         line-height: 32px;
-        text-align: left
+        text-align: left;
     }
     .advantages__title {
-        margin-bottom: 50px
+        margin-bottom: 50px;
     }
     .advantages__list {
-        display: block
+        display: block;
     }
     .advantages__item {
         width: 270px;
@@ -397,56 +569,55 @@
         padding-top: 35px;
         box-sizing: border-box;
         padding-left: 120px;
-        margin-bottom: 0
+        margin-bottom: 0;
     }
     .advantages__guarantee {
         background-size: 62px 70px;
-        background-position: 30px center
+        background-position: 30px center;
     }
     .advantages__assortment {
         background-size: 77px 80px;
-        background-position: 30px center
+        background-position: 30px center;
     }
     .advantages__earn {
         background-size: 122px 122px;
-        background-position: left center
+        background-position: left center;
     }
     .advantages__support {
         background-size: 100px auto;
-        background-position: left 20px
+        background-position: left 20px;
     }
     .advantages__minimum {
         background-size: 108px 81px;
-        background-position: left center
+        background-position: left center;
     }
     .advantages__manufacturer {
         background-size: 131px 94px;
-        background-position: -20px center
+        background-position: -20px center;
     }
     .section__description {
         font-size: 14px;
         line-height: 21px;
-        text-align: left
+        text-align: left;
     }
     .procedure__section-wrapper {
         padding-bottom: 81px;
-        ;
     }
     .procedure__title {
-        margin-bottom: 22px
+        margin-bottom: 22px;
     }
     .procedure__description {
-        margin-bottom: 54px
+        margin-bottom: 54px;
     }
     .step__title {
         font-size: 18px;
         line-height: 24px;
-        margin-bottom: 5px
+        margin-bottom: 5px;
     }
     .step__description {
         font-size: 12px;
         line-height: 18px;
-        margin-bottom: 25px
+        margin-bottom: 25px;
     }
     .aquaint__title {
         font-size: 14px;
@@ -514,6 +685,8 @@
     }
     .parts__list {
         margin-bottom: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .part__label {
         font-size: 14px;
@@ -538,17 +711,282 @@
         margin-bottom: 22px;
         text-align: center;
     }
+    .profit {
+        margin-bottom: 84px;
+    }
+    .profit-wrapper {
+        padding-top: 43px;
+        padding-bottom: 58px;
+    }
+    .profit__title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .profit__callback {
+        width: 280px;
+        height: 397px;
+        border-radius: 10px;
+    }
+    .form__title {
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 29px;
+        margin-bottom: 6px;
+    }
+    .form__description {
+        width: 237px;
+        margin-bottom: 28px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .profit__buttons {
+        margin-bottom: 32px;
+    }
+    .callback__input {
+        width: 237px;
+        height: 54px;
+        padding-right: 23px;
+        padding-left: 23px;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 9px;
+    }
+    .callback__submit {
+        width: 175px;
+        margin-right: 8px;
+    }
+    .privacy {
+        font-size: 10px;
+        line-height: 13px;
+        width: auto;
+    }
+    .cooperation {
+        margin-bottom: 117px;
+    }
+    .cooperation__title {
+        margin-top: 0;
+        margin-bottom: 47px;
+        text-align: center;
+    }
+    .cooperation__item {
+        height: 72px;
+        margin-top: 0;
+        margin-left: 110px;
+        padding-bottom: 0;
+        font-size: 14px;
+        line-height: 72px;
+        text-align: left;
+    }
+    .cooperation__item::before {
+        height: 72px;
+        width: 100px;
+        bottom: 0;
+        top: 0;
+        left: -110px;
+        background-size: contain;
+    }
+    .cooperation__list {
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+    .commercial-button {
+        width: 219px;
+        margin-right: 7px;
+    }
+    .wholesale {
+        width: 280px;
+        margin-bottom: 84px;
+        background: radial-gradient(70.01% 49.87% at 45.36% 50.13%, #ffffff 0%, #f5f5f5 100%);
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    .wholesale__title {
+        padding-top: 37px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .wholesale__callback-wrapper {
+        margin-bottom: 32px;
+    }
+    .privacy__wholesale {
+        padding-bottom: 34px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .distributor {
+        margin-bottom: 63px;
+    }
+    .distributor__title {
+        margin-bottom: 30px;
+    }
+    .partners {
+        margin-bottom: 115px;
+    }
+    .partners__list {
+        width: 290px;
+    }
+    .partners__item {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .partners__logo-wrapper {
+        width: 100px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+    .partners__logo {
+        width: auto;
+        height: 80%;
+    }
+    .partners__title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .partners__name {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .contacts-wrapper {
+        width: 100%;
+    }
+    .contacts__title {
+        margin-bottom: 13px;
+    }
+    .contacts__description {
+        margin-bottom: 26px;
+    }
+    .messengers {
+        margin-bottom: 35px;
+    }
+    .vk-button {
+        width: 54px;
+        height: 54px;
+        margin-left: 10px;
+        background-size: 16px 16px, auto;
+        box-shadow: 0px 1px 0px #325b8e, 0px 4px 15px rgba(86, 124, 171, 0.6), inset 0px 0px 11px rgba(255, 255, 255, 0.4);
+    }
+    .address__card {
+        padding-left: 36px;
+        margin-bottom: 42px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .address__card::before {
+        width: 22px;
+        height: 25px;
+        background-size: 22px 25px;
+    }
+    .timetable {
+        display: block;
+        margin-top: 13px;
+    }
+    .contacts {
+        margin-bottom: 85px;
+    }
+    .contacts__phone {
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+    }
+    .contacts__number {
+        margin-bottom: 9px;
+    }
+    .connection-button--contacts {
+        width: 280px;
+    }
+    .map-wrapper {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .map {
+        width: 560px;
+        height: auto;
+        margin-left: -30px;
+        border-radius: none;
+    }
+    .first {
+        margin-bottom: 74px;
+    }
+    .first__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .first__description {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+    .vk-button-big {
+        width: 171px;
+        height: 54px;
+        padding-left: 32px;
+        font-size: 11px;
+        line-height: 54px;
+        background-size: 20px 11px, auto;
+        background-position: 32px 48%, center;
+    }
+    .footer {
+        display: block;
+        margin-top: 72px;
+        margin-bottom: 54px;
+        text-align: center;
+    }
+    .way-agency {
+        justify-content: center;
+    }
+    .modal__callback {
+        top: 0;
+        width: 350px;
+        height: auto;
+        padding-top: 40px;
+        border-radius: 0;
+    }
+    .buttons__modal {
+        margin-bottom: 32px;
+    }
+    .modal__privacy {
+        margin-bottom: 67px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .close-button {
+        top: 30px;
+        right: 28px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .modal__callback {
+        width: 100%;
+    }
+    .cooperation__list {
+        width: auto;
+    }
+    .cooperation__item {
+        width: auto;
+    }
 }
 @media screen and (max-width: 350px) {
     .presentation {
-        background-position: center -15px
+        background-position: center -15px;
     }
     .logo-torque {
         width: 40px;
-        height: 40px
+        height: 40px;
     }
     .logo-rktor {
         width: 45px;
-        height: 26px
+        height: 26px;
+    }
+    .profit__callback {
+        width: auto;
+    }
+    .wholesale {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .partners__list {
+        width: 100%;
     }
 }
