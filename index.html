@@ -6,14 +6,13 @@
     <title>Автозапчасти "Торсион"</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" href="owl/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owl/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicon.png">
 </head>
-
 
 <body>
     <header class="header">
@@ -408,7 +407,7 @@
                             </label>
 
                         </div>
-                        	  <button type="submit" class="connection-button test__submit js-submit">Проверить наличие</button>
+                        <!--<button type="submit" class="connection-button test__submit js-submit">Проверить наличие</button>-->
                     </div>
 
                     <div class="test__result js-test">
@@ -438,37 +437,26 @@
             <h2 class="title quality__title">Гарантия <span class="title-select">качества</span></h2>
             <p class="section__description quality__description">Мы дорожим своей репутацией и планируем только долгосрочные отношения с каждым клиентом, поэтому уделяем огромное внимание качеству поставляемого товара. Вы будете работать напрямую с производителями.</p>
 
-            <div class="slider">
-                <div class="owl-carousel">
-                    <div>
-                        <img src="img/certificate.png">
-                    </div>
-                    <div>
-                        <img src="img/certificate.png">
-                    </div>
-                    <div>
-                        <img src="img/certificate.png">
-                    </div>
-                    <div>
-                        <img src="img/certificate.png">
-                    </div>
-                    <div>
-                        <img src="img/certificate.png">
-                    </div>
-                    <div>
-                        <img src="img/certificate.png">
-                    </div>
-                    <div>
-                        <img src="img/certificate.png">
-                    </div>
+            <div class="slider js-slider">
+                <div>
+                    <img class="slider__image" src="img/certificate.png" width="334" height="438">
+                </div>
+                <div>
+                    <img class="slider__image" src="img/certificate.png" width="334" height="438">
+                </div>
+                <div>
+                    <img class="slider__image" src="img/certificate.png" width="334" height="438">
+                </div>
+                <div>
+                    <img class="slider__image" src="img/certificate.png" width="334" height="438">
+                </div>
+                <div>
+                    <img class="slider__image" src="img/certificate.png" width="334" height="438">
+                </div>
+                <div>
+                    <img class="slider__image" src="img/certificate.png" width="334" height="438">
                 </div>
             </div>
-            <button type="button" class="slider__button">
-                <div class="slider__arrow slider__arrow--left"></div>
-            </button>
-            <button type="button" class="slider__button">
-                <div class="slider__arrow slider__arrow--right"></div>
-            </button>
         </section>
 
         <section class="profit">
@@ -679,14 +667,11 @@
             </a>
         </p>
     </footer>
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="owl/dist/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.owl-carousel').owlCarousel();
-        });
-    </script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
