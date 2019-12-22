@@ -456,12 +456,14 @@ body {
     box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
 }
+
 .test__first-question,
 .test__second-question,
 .test__third-question,
-.test__result {
+.js-test-result {
     display: none;
 }
+
 .test__progress {
     position: relative;
     width: 553px;
@@ -716,12 +718,6 @@ body {
 .test__third-question {
     position: relative;
 }
-.test__submit {
-    position: absolute;
-    bottom: -161px;
-    right: 228px;
-    margin-right: 0;
-}
 .test__result {
     text-align: center;
 }
@@ -762,6 +758,16 @@ body {
 }
 .button__next {
     margin-right: 0;
+}
+.test__submit {
+    margin-right: 0;
+}
+.button__download {
+    color: #265a93;
+    background: #ffffff;
+    border: 2px solid #265a93;
+    box-sizing: border-box;
+    box-shadow: none !important;
 }
 .quality {
     margin-bottom: 64px;

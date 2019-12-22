@@ -38,7 +38,7 @@
             }
         });
 
-/*        var testFrames = document.querySelectorAll('.js-test');
+        var testFrames = document.querySelectorAll('.js-test');
         var previousButton = document.querySelector('.js-button-previous');
         var nextButton = document.querySelector('.js-button-next');
 
@@ -68,7 +68,7 @@
                         testFrames[i].classList.add('js-show');
                     }
                 }
-            });*/
+            });
 
         jQuery(function($) {
             $('input[type="tel"]').mask("+7(999)999-99-99", {
