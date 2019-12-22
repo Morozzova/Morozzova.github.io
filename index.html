@@ -179,7 +179,7 @@
             <h2 class="title catalogue__title">Каталог <span class="title-select">продукции</span></h2>
             <p class="section__description catalogue__description">В наличии <span class="section__selection">более 1 500 наименований</span> компонентов для самых популярных автомобилей и авто отечественного производства</p>
 
-            <div class="catalogue__test">
+            <form class="catalogue__test">
 
                 <div class="car-brand__list">
 
@@ -429,7 +429,7 @@
                         <button type="button" class="connection-button button__manager js-button-manager js-connection-button">Связаться с менеджером</button>-->
                     </div>
                 </div>
-            </div>
+            </form>
 
 
         </section>
@@ -470,11 +470,11 @@
                 </div>
 
 
-                <form class="callback profit__callback">
+                <form class="callback profit__callback js-form-validate">
                     <h3 class="form__title">Заполните форму</h3>
                     <p class="form__description">и менеджер свяжется с Вами в ближайшее время</p>
                     <input class="callback__input profit__input" type="text" placeholder="Имя" required>
-                    <input class="callback__input profit__input" type="tel" placeholder="Номер телефона" required>
+                    <input class="callback__input profit__input js-disabled" type="tel" placeholder="Номер телефона" required>
 
                     <div class="buttons callback-buttons profit__buttons">
                         <input class="callback__submit connection-button profit__submit" type="submit" value="Связаться с менеджером">
@@ -509,13 +509,13 @@
 
         <section class="wholesale">
             <h2 class="title wholesale__title">Нужна рассрочка <span class="title-select">на&nbsp;оптовую закупку</span>?</h2>
-            <form class="wholesale__callback">
+            <form class="wholesale__callback js-form-validate">
                 <div class="wholesale__callback-wrapper">
-                    <input class="callback__input wholesale__input" type="text" placeholder="Имя">
-                    <input class="callback__input wholesale__input" type="tel" placeholder="Номер телефона">
+                    <input class="callback__input wholesale__input" type="text" placeholder="Имя" required>
+                    <input class="callback__input wholesale__input" type="tel" placeholder="Номер телефона" required>
 
                     <div class="callback-buttons wholesale__callback-buttons">
-                        <input class="callback__submit connection-button" type="submit" value="Связаться с менеджером">
+                        <input class="callback__submit connection-button js-disabled" type="submit" value="Связаться с менеджером">
                         <a href="https://wa.me/79099017227?text=Здравствуйте!%20Меня%20интересует%20рассрочка%20на%20оптовую%20закупку." class="whatsapp-button">
                         </a>
                     </div>
@@ -640,14 +640,14 @@
         </section>
 
         <section class="modal">
-            <form class="callback modal__callback js-modal">
+            <form class="callback modal__callback js-modal js-form-validate">
                 <h3 class="form__title">Заполните форму</h3>
                 <p class="form__description">и менеджер свяжется с Вами в ближайшее время</p>
-                <input class="callback__input" type="text" placeholder="Имя" required>
-                <input class="callback__input" type="tel" placeholder="Номер телефона" required>
+                <input class="callback__input js-modal-input" type="text" placeholder="Имя" required>
+                <input class="callback__input js-modal-input" type="tel" placeholder="Номер телефона" required>
 
                 <div class="buttons buttons__modal">
-                    <input class="callback__submit connection-button" type="submit" value="Связаться с менеджером">
+                    <input class="callback__submit connection-button js-disabled" type="submit" value="Связаться с менеджером">
                     <a href="https://wa.me/79099017227?text=Здравствуйте!%20Я%20заинтересован%20в%20покупке%20запчастей%20для%20автомобиля." class="whatsapp-button">
                     </a>
                 </div>

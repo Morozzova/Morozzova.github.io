@@ -930,6 +930,9 @@ body {
 .callback__input:focus {
     color: #000000;
 }
+.callback__input--req {
+    box-sizing: border-box;
+}
 .profit__buttons {
     justify-content: center;
     margin-bottom: 44px;

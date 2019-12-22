@@ -75,3 +75,59 @@
                 placeholder: "+7(___)___-__-__"
             });
         });
+
+
+
+        (function( $ ){
+	
+            $(function() {
+
+                $('.js-form-validate').each(function(){
+                    var form = $(this),
+                        btn = form.find('.callback__submit');
+                        form.find('.callback__input').addClass('callback__input--req');
+
+                    function checkInput(){
+                        form.find('.callback__input').each(function(){
+                            if($(this).val() != ''){
+                                $(this).removeClass('callback__input--req');
+                            } else {
+                                $(this).addClass('callback__input--req');
+                            }
+                        });
+                    }
+
+                    function lightEmpty(){
+                        form.find('.callback__input--req').css({'border':'1px solid #ff0000'});
+                        setTimeout(function(){
+                            form.find('.callback__input--req').removeAttr('style');
+                        },3000);
+                    }
+
+                    setInterval(function(){
+                        checkInput();
+                        var sizeEmpty = form.find('.callback__input--req').size();
+
+                        if(sizeEmpty > 0){
+                            if(btn.hasClass('js-disabled')){
+                                return false
+                            } else {
+                                btn.addClass('js-disabled')
+                            }
+                        } else {
+                            btn.removeClass('js-disabled')
+                        }
+                    },3000);
+
+                    btn.click(function(){
+                        if($(this).hasClass('js-disabled')){
+                            lightEmpty();
+                            return false
+                        } else {
+                            form.submit();
+                        }
+                    });
+                });
+            });
+
+        })( jQuery );
