@@ -782,7 +782,7 @@ body {
 .slider__button {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 48px;
     margin: auto;
     outline: none;
     border: none;

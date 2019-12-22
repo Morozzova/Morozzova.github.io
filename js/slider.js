@@ -39,7 +39,6 @@ $('.js-slider').slick({
       breakpoint: 450,
       settings: {
         arrows: false,
-        centerPadding: '14px',
         slidesToShow: 1
       }
     }
